@@ -1,0 +1,35 @@
+>>> print_square = __import__('4-print_square').print_square
+
+'''4-print_square()''
+
+Succesful Test:
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+passing a negative integer
+::
+    >>> print_square(-5)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+passing a string
+::
+    >>> print_square("big")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+passing two integers
+::
+    >>> print_square(5, 5)
+    Traceback (most recent call last):
+    TypeError: print_square() takes 1 positional argument but 2 were given
+
+passing a float
+::
+    >>> print_square(5.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
