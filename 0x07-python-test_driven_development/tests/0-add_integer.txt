@@ -1,0 +1,52 @@
+#0-add_integer.txt
+
+``add_integer()`` 
+
+returns the sum of its arguments.
+
+::
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(2, 3)
+    5
+
+converts floating-points to int
+
+::
+
+    >>> add_integer(2.0, 3.0)
+    5
+
+if a doesn't exist an exception is thrown.
+if b is not specified it will default to 98
+
+::
+    >>> add_integer(0)
+    98
+    >>> add_integer(2.0,)
+    100
+    >>> add_integer(-5.5,100.3)
+    95
+
+non-numbers should throw TypeError Exceptions
+
+::
+
+    >>> add_integer('a', 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(2,['A', 'B', 'C'])
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> add_integer({'a':1},)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
