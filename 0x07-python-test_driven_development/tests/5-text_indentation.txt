@@ -1,0 +1,36 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+'''text_indention()'''
+
+a string without end punctuation
+::
+    >>> text_indentation("This is a string that goes on and on")
+    This is a string that goes on and on
+
+string ending with . followed by string without punctuation
+::
+    >>> text_indentation("I start here. And I end down here")
+    I start here.
+    <BLANKLINE>
+    And I end down here
+
+string ending with ? followed by string without punctuation
+::
+    >>> text_indentation("New delimiter? Same idea")
+    New delimiter?
+    <BLANKLINE>
+    Same idea
+
+string ending with : followed by string without punctuation
+::
+    >>> text_indentation("Good day: another option")
+    Good day:
+    <BLANKLINE>
+    another option
+
+passing no argument
+::
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
