@@ -1,6 +1,6 @@
-## 0x07. Python - Inheritance
+# 0x07. Python - Inheritance
 
-# Learning Objectives
+## Learning Objectives
 * Why Python programming is awesome
 * What is a superclass, baseclass or parentclass
 * What is a subclass
