@@ -1,0 +1,46 @@
+Import module for testing:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Tests performed:
+
+    >>> my_list = MyList()
+
+    >>> my_list
+    []
+
+    >>> my_list.append(77)
+
+    >>> my_list.append(69)
+
+    >>> my_list.append(420)
+
+    >>> my_list
+    [77, 69, 420]
+
+    >>> my_list.print_sorted()
+    [69, 77, 420]
+
+    >>> my_list
+    [77, 69, 420]
+
+    >>> my_list = MyList([8, 0, 0, 8])
+
+    >>> my_list
+    [8, 0, 0, 8]
+
+    >>> my_list.print_sorted()
+    [0, 0, 8, 8]
+
+    >>> my_list = MyList("kekw")
+    
+    >>> my_list
+    ['k', 'e', 'k', 'w']
+
+    >>> my_list.print_sorted()
+    ['e', 'k', 'k', 'w']
+
+    >>> new_list = MyList()
+
+    >>> new_list.print_sorted()
+    []
