@@ -7,11 +7,9 @@ from the request
 import requests
 
 if __name__ == "__main__":
-    url = 'https://intranet.hbtn.io/status'
-    response = requests.get(url)
+    response = requests.get('https://intranet.hbtn.io/status')
 
-    content = response.content.decode('utf-8')
 
     print("Body response:")
-    print("\t- type: {}".format(type(content)))
-    print("\t- content: {}".format(content))
+    print("\t- type: {}".format(type(response.text)))
+    print("\t- content: {}".format(response.text))
