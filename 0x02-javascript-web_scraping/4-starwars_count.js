@@ -1,10 +1,9 @@
 #!/usr/bin/node
 const request = require('request');
-const apiUrl = process.argv[2];
 const characterId = '18';
 let count = 0;
 
-request(apiUrl, function (error, response, body) {
+request(process.argv[2], function (error, response, body) {
   if (error) {
     console.error(error);
   } else {
